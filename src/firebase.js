@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { getFirestore, doc, deleteDoc, updateDoc } from "firebase/firestore";
+
 
 // ✅ Firebase config for your project
 const firebaseConfig = {
@@ -18,4 +19,4 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 // ✅ Export Firestore instance
-export { db };
+export { db, doc, deleteDoc, updateDoc };

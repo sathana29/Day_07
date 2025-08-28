@@ -5,6 +5,8 @@ import About from './components/About';
 import Registration from './components/Registration';
 import Navbar from './components/Navbar';
 import UserList from './components/UserList';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
