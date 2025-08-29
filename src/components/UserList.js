@@ -123,7 +123,7 @@ function UserList() {
         Registered Users
       </h2>
 
-      {/* Search with icon */}
+    
       <div style={{ position: "relative", marginBottom: "1.5rem" }}>
         <i
           className="bi bi-search"
@@ -150,7 +150,7 @@ function UserList() {
         />
       </div>
 
-      {/* Edit form */}
+      
       {editingUser && (
         <form
           onSubmit={handleUpdate}
@@ -249,7 +249,7 @@ function UserList() {
         </form>
       )}
 
-      {/* Users table/list */}
+    
       <div style={{ display: "flex", flexDirection: "column", gap: "1rem", marginBottom: "2rem" }}>
         {filteredUsers.length === 0 ? (
           <p style={{ textAlign: "center", color: "#777" }}>No users found.</p>
@@ -327,8 +327,7 @@ function UserList() {
           </>
         )}
       </div>
-
-      {/* Bootstrap Card View */}
+      
       <div className="row">
         {filteredUsers.map((user) => (
           <div className="col-md-4" key={user.id}>
@@ -349,7 +348,7 @@ function UserList() {
         ))}
       </div>
 
-      {/* Delete Confirmation */}
+    
       {showDeleteConfirm && (
         <div
           style={{

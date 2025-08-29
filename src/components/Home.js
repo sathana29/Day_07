@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import 'bootstrap-icons/font/bootstrap-icons.css'; // Only needed if not globally imported
+import 'bootstrap-icons/font/bootstrap-icons.css'; 
 
 function Home() {
   return (
@@ -20,7 +20,7 @@ function Home() {
           textAlign: 'center',
         }}
       >
-        {/* ✅ Add icon to heading */}
+
         <h1 className="mb-4" style={{ color: '#4a3f6b' }}>
           <i className="bi bi-phone-fill me-2" style={{ color: '#5a2a83' }}></i>
           Welcome to Mobile App Development
@@ -30,7 +30,7 @@ function Home() {
           Manage your data efficiently using our mobile app.
         </p>
 
-        {/* ✅ Add icon inside the button */}
+        
         <Link to="/registration" className="btn btn-primary btn-lg">
           <i className="bi bi-person-plus-fill me-2"></i>
           Register
