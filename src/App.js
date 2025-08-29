@@ -6,6 +6,8 @@ import Registration from './components/Registration';
 import Navbar from './components/Navbar';
 import UserList from './components/UserList';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 
 function App() {

@@ -3,23 +3,41 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light px-3">
-      <Link className="navbar-brand" to="/">MobileApp</Link>
-      <div className="collapse navbar-collapse">
-        <ul className="navbar-nav me-auto">
-          <li className="nav-item">
-            <Link className="nav-link" to="/">Home</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/registration">Registration</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/about">About</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/userlist">User</Link>
-          </li>
-        </ul>
+    <nav
+      className="navbar navbar-expand-lg"
+      style={{
+        background: 'linear-gradient(90deg, #764ba2 0%, #667eea 100%)',
+        padding: '10px 30px',
+      }}
+    >
+      <div className="container">
+        <Link className="navbar-brand text-white fw-bold" to="/">
+          MyApp
+        </Link>
+        <div className="collapse navbar-collapse">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <Link className="nav-link text-white" to="/">
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link text-white" to="/registration">
+                Register
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link text-white" to="/about">
+                About
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link text-white" to="/userlist">
+                Users
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );

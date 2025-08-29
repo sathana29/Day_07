@@ -18,5 +18,8 @@ const app = initializeApp(firebaseConfig);
 // ✅ Initialize Firestore
 const db = getFirestore(app);
 
+console.log("firebase Connected:",app);
+
+
 // ✅ Export Firestore instance
 export { db, doc, deleteDoc, updateDoc };
